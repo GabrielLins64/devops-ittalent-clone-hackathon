@@ -12,9 +12,12 @@
 - [Comandos utilizados](#comandos-utilizados)
   - [Buildar a imagem](#buildar-a-imagem)
   - [Executando o container no host](#executando-o-container-no-host)
+  - [Adicionando uma tag à imagem](#adicionando-uma-tag-à-imagem)
+  - [Enviando a imagem para o Docker Hub](#enviando-a-imagem-para-o-docker-hub)
 - [Screenshots](#screenshots)
   - [Buildando a imagem](#buildando-a-imagem)
   - [Executando o container localmente (teste)](#executando-o-container-localmente-teste)
+  - [Subindo a imagem para o Docker Hub](#subindo-a-imagem-para-o-docker-hub)
 
 ---
 
@@ -58,6 +61,18 @@ Testamos a execução do container na máquina host só para garantir o correto 
 docker run -p 9080:9080 -e MONGO_DB_HOST=mongodb ittalent-clone-hackathon/go-app
 ```
 
+### Adicionando uma tag à imagem
+
+```shell
+docker tag ittalent-clone-hackathon/go-app:latest gabriel3035/ittalent-clone-hackathon:1.0
+```
+
+### Enviando a imagem para o Docker Hub
+
+```shell
+docker push gabriel3035/ittalent-clone-hackathon:latest
+```
+
 ---
 
 ## Screenshots
@@ -69,3 +84,7 @@ docker run -p 9080:9080 -e MONGO_DB_HOST=mongodb ittalent-clone-hackathon/go-app
 ### Executando o container localmente (teste)
 
 ![Container run on host](imgs/local_run.png)
+
+### Subindo a imagem para o Docker Hub
+
+![Image push to Docker Hub](imgs/img_push.png)
