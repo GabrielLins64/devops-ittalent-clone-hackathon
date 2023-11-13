@@ -10,7 +10,11 @@
 
 - [Descrição da Atividade](#descrição-da-atividade)
 - [Comandos utilizados](#comandos-utilizados)
+  - [Buildar a imagem](#buildar-a-imagem)
+  - [Executando o container no host](#executando-o-container-no-host)
 - [Screenshots](#screenshots)
+  - [Buildando a imagem](#buildando-a-imagem)
+  - [Executando o container localmente (teste)](#executando-o-container-localmente-teste)
 
 ---
 
@@ -40,6 +44,28 @@
 
 ## Comandos utilizados
 
+### Buildar a imagem
+
+```shell
+docker build -t ittalent-clone-hackathon/go-app:latest ./go-mongo-crud-rest-api/
+```
+
+### Executando o container no host
+
+Testamos a execução do container na máquina host só para garantir o correto funcionamento antes de fazer push na imagem
+
+```shell
+docker run -p 9080:9080 -e MONGO_DB_HOST=mongodb ittalent-clone-hackathon/go-app
+```
+
 ---
 
 ## Screenshots
+
+### Buildando a imagem
+
+![Image build](imgs/build.png)
+
+### Executando o container localmente (teste)
+
+![Container run on host](imgs/local_run.png)
