@@ -50,11 +50,11 @@
 
   &emsp;3.4. Criar uma dependência entre os serviços para que o banco suba antes da aplicação;
 
-5. Com a aplicação rodando, executar os métodos de interação GET, POST, PUT e DELETE com a aplicação a partir da instancia Linux(cliente)
+4. Com a aplicação rodando, executar os métodos de interação GET, POST, PUT e DELETE com a aplicação a partir da instancia Linux(cliente)
 
-6. Tirar print dos resultados
+5. Tirar print dos resultados
 
-7. A avaliação será feita pelos commits no github, você deve responder com o link para o repo
+6. A avaliação será feita pelos commits no github, você deve responder com o link para o repo
 
 ---
 
