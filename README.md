@@ -18,6 +18,7 @@
   - [Buildando a imagem](#buildando-a-imagem)
   - [Executando o container localmente (teste)](#executando-o-container-localmente-teste)
   - [Subindo a imagem para o Docker Hub](#subindo-a-imagem-para-o-docker-hub)
+  - [Executando tudo com o Docker Compose](#executando-tudo-com-o-docker-compose)
 
 ---
 
@@ -88,3 +89,9 @@ docker push gabriel3035/ittalent-clone-hackathon:latest
 ### Subindo a imagem para o Docker Hub
 
 ![Image push to Docker Hub](imgs/img_push.png)
+
+### Executando tudo com o Docker Compose
+
+![Docker compose up](imgs/dc_up.png)
+
+![Docker ps](imgs/dc_ps.png)
